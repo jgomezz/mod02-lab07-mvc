@@ -6,9 +6,10 @@ public class Cliente {
 	private String nombres;
 	private String paterno;
 	private String materno;
+	private String dni;
 
-	public String getNombreCompleto() {
-		return this.nombres + " " + this.paterno + " " + this.materno;
+	public String getInformacion() {
+		return this.nombres + " " + this.paterno + " " + this.materno + " " + this.dni;
 	}
 
 	public Cliente(String codigo, String nombres, String paterno, String materno) {
@@ -49,6 +50,10 @@ public class Cliente {
 
 	public void setMaterno(String materno) {
 		this.materno = materno;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
 	}
 
 	@Override

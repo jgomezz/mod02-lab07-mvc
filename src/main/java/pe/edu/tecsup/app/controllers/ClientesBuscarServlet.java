@@ -49,6 +49,7 @@ public class ClientesBuscarServlet extends HttpServlet {
 				
 		// Leer datos ingresados
 		String codigo = request.getParameter("txtCodigo");
+		String dni = request.getParameter("txtDni");
 		
 		System.out.println("Codigo --> " + codigo);
 		
@@ -60,6 +61,9 @@ public class ClientesBuscarServlet extends HttpServlet {
 		System.out.println(value);
 		
 		if (value != null) {
+			// Guardo el DNI
+			value.setDni(dni);
+		
 			// Guardar el valor en el REQUEST
 			request.setAttribute("cliente_llave", value);
 		}

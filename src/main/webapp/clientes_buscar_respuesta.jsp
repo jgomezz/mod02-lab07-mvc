@@ -22,9 +22,10 @@
 	   Cliente value = (Cliente)request.getAttribute("cliente_llave");
 	
 	   if (value != null )
- 	       out.println(value.getNombreCompleto());
+ 	       out.println(value.getInformacion());
 	   else
 		   out.println("Registro no encontrado");
+	   
 	   
 	%>
 
