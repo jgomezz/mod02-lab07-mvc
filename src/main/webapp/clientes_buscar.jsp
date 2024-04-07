@@ -10,7 +10,9 @@
 	
 	<form action="ClientesBuscarServlet" method="post">
 	
-		C&oacute;digo: <input type="text" name="txtCodigo"/>
+		C&oacute;digo: <input type="text" name="txtCodigo"/> <BR>
+
+		DNI: <input type="text" name="txtDni"/> <BR>
 		
 		<input type="submit" value="Buscar"/>
 	
